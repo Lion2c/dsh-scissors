@@ -1,0 +1,12 @@
+{
+  "$schema": "../schema/plugin.schema.json",
+  "id": "Lion2c/dsh-scissors",
+  "name": "dsh-scissors",
+  "repository": "https://github.com/Lion2c/dsh-scissors",
+  "category": "ui",
+  "description": {
+    "en": "Adds a scissors button beside the composer's + button. Capture a screen region directly or hide the main window first; the PNG becomes a normal image attachment in the message box.",
+    "zh": "在输入框 + 按钮右侧添加剪刀按钮。可直接框选屏幕区域，或先隐藏主窗口再截图；PNG 会作为普通图片附件放入输入框。"
+  },
+  "added": "2026-11-10"
+}

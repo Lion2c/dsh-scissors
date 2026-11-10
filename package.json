@@ -1,0 +1,73 @@
+{
+  "name": "dsh-scissors",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "index.js",
+  "icon": "./icon.svg",
+  "description": "Scissors button for the DeepSeek Harness composer: capture a screen region (optionally hiding the main window first) and drop the PNG straight into the message box.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "screen-capture",
+    "scissors",
+    "composer",
+    "region-capture"
+  ],
+  "license": "MIT",
+  "author": "Lion2c",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lion2c/dsh-scissors.git"
+  },
+  "homepage": "https://github.com/Lion2c/dsh-scissors#readme",
+  "bugs": {
+    "url": "https://github.com/Lion2c/dsh-scissors/issues"
+  },
+  "engines": {
+    "dsh": ">=0.2.2-rc.1 <0.3.0-0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test",
+    "test:native": "powershell -NoProfile -ExecutionPolicy Bypass -File test/win/run.ps1"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "native/win/selector.cs",
+    "native/win/scissors.exe",
+    "native/win/build.ps1",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "PUBLISHING.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

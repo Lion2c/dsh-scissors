@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Scissors Screenshot",
+    "description": "Adds a scissors button to the right of the composer's + button. It opens a small menu with two capture modes: capture a region directly, or hide the main window first and restore it afterwards. The captured PNG becomes an ordinary image attachment in the message box."
+  }
+}
